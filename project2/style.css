@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.containor{
+    width: 100%;
+    min-height: 40vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{ 
+    background-color:#ff54a2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin:30 ;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display:none;
+}
+nav{
+    flex:1 ;
+    text-align: right;
+}
+nav ul li{
+    list-style:none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+} 
+nav ul li a:hover{
+    color:#ff5ea2 ;
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin: 90px 0 ;
+}
+.col-1{
+flex-basis: 30%;
+position: relative;
+margin-left: 60px;
+}
+.col-1 h2{
+   font-size:54px;
+    }
+.col-1 h3{
+    font-size:30px ;
+    color: #707070;
+    font-weight: 100;
+    margin:  20px 0 10px; 
+     }
+ .col-1 p{
+    font-size:16px ;
+    color: #b7b7b7;
+    font-weight: 100;
+
+     }
+     .col-1 h4{
+       margin:30px 0 ;
+       font-size: 20px;
+
+         }
+ 
+ button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background:linear-gradient(to right , #fb5283 ,#ff3527) ;
+    border-radius:6px ;
+    cursor: pointer;
+ }
+ /* Initial styles for the button and image */
+button img {
+    width: 30px;
+    display: none;
+}
+
+/* Hover styles for the button */
+button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Show the image when hovering over the button */
+button:hover img {
+    display: block;
+}
+.col-1::after {
+    content: "";
+    width: 10px;
+    height: 57%; /* Set the height to 57% to create a vertical bar */
+    background: linear-gradient(#ff4696, #ff6062); /* Use for vertical gradient */
+    position: absolute; /* Position the gradient bar relative to the parent element */
+    top: 8px;
+    left: -40px;
+}
+.col-2{
+    position: relative;
+    flex-basis:40% ;
+    display: flex;
+    align-items: center;
+}
+.col-2 .controller{
+    width: 90%;
+}
+.color-box{
+    position: absolute;
+    right: 0;
+    top:0 ;
+    background: linear-gradient(#ff54a2 , #ff575a);
+    border-radius:20px 0 20px ;
+    height: 100%;
+    width:90% ;
+    z-index:-1 ;
+    transform:translateX(150px) ;
+}
+/* Style the button container */
+.add-btn {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Style the image inside the button */
+.add-btn img {
+    width: 35px;
+    margin-bottom: 5px;
+}
+
+/* Style the small text */
+.add-btn p {
+    font-size: 12px;
+    display: inline; /* Set the <p> element to display inline */
+    margin-left: 5px; /* Add some spacing between the image and text */
+}
+/* Style the social media icons */
+.socials-links img {
+    height: 13px; /* Set the height of the icons */
+    margin-right: 20px; /* Add some spacing between the icons */
+    cursor: pointer; /* Change the cursor to a pointer on hover (optional) */
+}
+.socials-links{
+    margin: 10px;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+footer{
+    background: linear-gradient(#ff54a2 , #ff575a);
+    color: white;
+    padding: 9px 20px;
+}
+
+@media only screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(#ff54a2 , #ff575a);
+        position: absolute;
+        top:75px ;
+        right:0 ;
+        z-index: 2;
+    }
+    
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+    }
+.row{
+    flex-direction: column-reverse;
+    margin: 50px 0;
+}
+.col-2
+{
+    flex-basis: 100%;
+    margin-bottom:50px ;
+}
+.col-2 .controller{
+    width:70% ;
+}
+.col-box{
+    transform: translateX(75px);
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h2{
+        font-size:35px ;
+    }
+    .col-1 h3{
+        font-size:15px ;
+
+    }
+}
+
+}
